@@ -3,217 +3,221 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Company Name</title>
+<title>BENCHMAARK FASHION NETWORK</title>
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", sans-serif;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+body{
+  background:#f4f6f8;
+  color:#222;
+}
+nav{
+  background:#1a2932;
+  padding:15px 30px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+nav h2{
+  color:#fff;
+}
+nav ul{
+  list-style:none;
+  display:flex;
+  gap:20px;
+}
+nav ul li a{
+  color:#fff;
+  text-decoration:none;
+  font-size:15px;
+}
+header{
+  background:linear-gradient(120deg,#274156,#1a2932);
+  color:#fff;
+  text-align:center;
+  padding:90px 20px;
+}
+header h1{
+  font-size:46px;
+}
+header p{
+  font-size:18px;
+  margin-top:10px;
+  opacity:0.9;
+}
+section{
+  max-width:1100px;
+  margin:auto;
+  padding:60px 20px;
+}
+h2{
+  text-align:center;
+  margin-bottom:30px;
+  color:#274156;
+}
+.about p{
+  text-align:center;
+  max-width:900px;
+  margin:auto;
+  line-height:1.7;
+}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+.card{
+  background:#fff;
+  padding:25px;
+  border-radius:10px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+.card:hover{
+  transform:translateY(-6px);
+}
+.card h3{
+  color:#274156;
+  margin-bottom:10px;
+}
+.products img{
+  width:100%;
+  border-radius:8px;
+  margin-bottom:10px;
+}
+.contact{
+  background:#fff;
+  padding:40px;
+  text-align:center;
+  border-radius:10px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+}
+.contact a{
+  display:inline-block;
+  margin-top:15px;
+  padding:12px 30px;
+  background:#274156;
+  color:#fff;
+  border-radius:30px;
+  text-decoration:none;
+}
+footer{
+  background:#1a2932;
+  color:#ccc;
+  text-align:center;
+  padding:18px;
+  font-size:14px;
 }
 
-body {
-  background: #f5f6f8;
-  color: #222;
-}
-
-/* HEADER */
-header {
-  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
-  color: white;
-  padding: 80px 20px;
-  text-align: center;
-}
-
-header h1 {
-  font-size: 42px;
-  margin-bottom: 10px;
-}
-
-header p {
-  font-size: 18px;
-  opacity: 0.9;
-}
-
-/* SECTION */
-section {
-  max-width: 1100px;
-  margin: auto;
-  padding: 60px 20px;
-}
-
-.section-title {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.section-title h2 {
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-
-.section-title p {
-  color: #666;
-}
-
-/* ABOUT */
-.about {
-  background: white;
-  border-radius: 14px;
-  padding: 40px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-}
-
-/* SERVICES */
-.services {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-}
-
-.card {
-  background: white;
-  padding: 30px;
-  border-radius: 14px;
-  text-align: center;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
-  transition: transform 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-6px);
-}
-
-.card h3 {
-  margin-bottom: 10px;
-}
-
-/* WHY US */
-.why {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-
-.why div {
-  background: #ffffff;
-  padding: 25px;
-  border-left: 4px solid #2c5364;
-  border-radius: 8px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-}
-
-/* CONTACT */
-.contact {
-  background: white;
-  border-radius: 14px;
-  padding: 40px;
-  text-align: center;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-}
-
-.contact a {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 12px 25px;
-  background: #2c5364;
-  color: white;
-  border-radius: 30px;
-  text-decoration: none;
-}
-
-/* FOOTER */
-footer {
-  background: #111;
-  color: #bbb;
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
+/* WhatsApp Button */
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  padding:14px 18px;
+  border-radius:50%;
+  font-size:22px;
+  text-decoration:none;
+  box-shadow:0 6px 20px rgba(0,0,0,0.3);
 }
 </style>
 </head>
 
 <body>
 
+<nav>
+  <h2>BENCHMAARK</h2>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
 <header>
-  <h1>Your Company Name</h1>
-  <p>Premium Textile & Garment Manufacturing Solutions</p>
+  <h1>BENCHMAARK FASHION NETWORK</h1>
+  <p>Connecting Fashion | Quality Manufacturing | Global Supply</p>
 </header>
 
-<section>
-  <div class="section-title">
-    <h2>About Us</h2>
-    <p>Quality, reliability & ethical manufacturing</p>
-  </div>
-
-  <div class="about">
-    <p>
-      We are a professionally managed textile and garment manufacturing company
-      delivering high-quality apparel solutions for domestic and global clients.
-      Our expertise lies in sustainable production, strict quality control, and
-      timely delivery.
-    </p>
-  </div>
+<section id="about" class="about">
+  <h2>About Us</h2>
+  <p>
+    BENCHMAARK FASHION NETWORK is a professional textile and apparel sourcing
+    company delivering trend-driven designs, premium fabrics, and reliable
+    manufacturing solutions for domestic and international fashion brands.
+  </p>
 </section>
 
-<section>
-  <div class="section-title">
-    <h2>Our Services</h2>
-    <p>End-to-end apparel manufacturing</p>
-  </div>
-
-  <div class="services">
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="grid">
     <div class="card">
-      <h3>T-Shirt Manufacturing</h3>
-      <p>High-quality knitwear for brands & retailers.</p>
+      <h3>Trend & Design Support</h3>
+      <p>Fashion-forward concepts aligned with global trends.</p>
     </div>
     <div class="card">
       <h3>Fabric Sourcing</h3>
-      <p>Organic, sustainable & performance fabrics.</p>
+      <p>Sustainable knit & woven fabrics with premium quality.</p>
     </div>
     <div class="card">
+      <h3>Garment Manufacturing</h3>
+      <p>Ethical, scalable and quality-focused production.</p>
+    </div>
+    <div class="card">
+      <h3>Export & Logistics</h3>
+      <p>End-to-end support for global deliveries.</p>
+    </div>
+  </div>
+</section>
+
+<section id="products" class="products">
+  <h2>Our Products</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://via.placeholder.com/400x250" alt="">
+      <h3>T-Shirts & Knitwear</h3>
+      <p>Premium casual and fashion knit garments.</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/400x250" alt="">
+      <h3>Woven Apparel</h3>
+      <p>Shirts, bottoms and structured garments.</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/400x250" alt="">
+      <h3>Fabrics</h3>
+      <p>Organic, sustainable and performance textiles.</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/400x250" alt="">
       <h3>Private Label</h3>
-      <p>Complete branding & labeling solutions.</p>
-    </div>
-    <div class="card">
-      <h3>Bulk & Export Orders</h3>
-      <p>Scalable production with export compliance.</p>
+      <p>End-to-end branding and labeling solutions.</p>
     </div>
   </div>
 </section>
 
-<section>
-  <div class="section-title">
-    <h2>Why Choose Us</h2>
-    <p>Your reliable production partner</p>
-  </div>
-
-  <div class="why">
-    <div>✔ Strict Quality Control</div>
-    <div>✔ Ethical & Sustainable Practices</div>
-    <div>✔ Competitive Pricing</div>
-    <div>✔ On-Time Delivery</div>
-  </div>
-</section>
-
-<section>
-  <div class="section-title">
-    <h2>Contact Us</h2>
-    <p>Let’s work together</p>
-  </div>
-
+<section id="contact">
+  <h2>Contact Us</h2>
   <div class="contact">
-    <p>Email: your@email.com</p>
+    <p>Email: info@benchmaarkfashion.com</p>
     <p>WhatsApp: +91-XXXXXXXXXX</p>
-    <a href="https://forms.gle/">Send Enquiry</a>
+    <a href="mailto:info@benchmaarkfashion.com">Send Enquiry</a>
   </div>
 </section>
 
 <footer>
-  © 2026 Your Company Name | All Rights Reserved
+  © 2026 BENCHMAARK FASHION NETWORK | All Rights Reserved
 </footer>
+
+<a class="whatsapp" href="https://wa.me/91XXXXXXXXXX" target="_blank">💬</a>
 
 </body>
 </html>
-
